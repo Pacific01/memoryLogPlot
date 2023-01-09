@@ -1,7 +1,6 @@
 #!/bin/sh
 
-for f in logs/*.log; do
-  plotPath=${f/logs/}
-  gnuplot -p -e "set terminal png;set output 'plots/$plotPath.png';plot '$f'"
+for file in logs/*.log; do
+  fileName=${file/logs/}
+  gnuplot -e "datafile='$file'; outputname='plots$fileName'" gnuplot.p
 done
-
