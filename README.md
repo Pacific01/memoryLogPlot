@@ -10,6 +10,7 @@ Run second script to convert all the `logs/*.log` to `plots/*.png` files.
 ## Requiremets
 
 * [gnuplot](http://www.gnuplot.info/)
+* [sysstat](https://github.com/sysstat/sysstat)
 
 ## Log ram
 
