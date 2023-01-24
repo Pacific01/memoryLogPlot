@@ -5,7 +5,8 @@ set datafile separator " "
 set ytics nomirror
 set y2tics
 
-plot datafile using 0:1 with points pointtype 4 pointsize 0.2 title "Mem", \
-     ""       using 0:2 axis x1y2 with points pointtype 6 pointsize 0.2 title "kbRead",\
-     ""       using 0:3 axis x1y2 with points pointtype 8 pointsize 0.2 title "kbWrite"
+plot datafile using 0:1 axis x1y1 with points pointtype 4 pointsize 0.2 title "Mem", \
+     ""       using 0:2 axis x1y1 with points pointtype 5 pointsize 0.2 title "tempfs",\
+     ""       using 0:3 axis x1y2 with points pointtype 6 pointsize 0.2 title "kbRead",\
+     ""       using 0:4 axis x1y2 with points pointtype 8 pointsize 0.2 title "kbWrite"
 
