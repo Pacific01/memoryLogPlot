@@ -15,7 +15,7 @@ Run second script to convert all the `logs/*.log` to `plots/*.png` files.
 ## Log ram
 
 ```sh
-sh memory-log.sh
+sh memory-log.sh <device_name>
 ```
 
 ## Plot

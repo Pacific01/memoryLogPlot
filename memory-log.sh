@@ -14,5 +14,5 @@ then
         sleep 1
     done
 else
-    echo "device name required"
+    echo "Device name required. Ex: sda, sdb, md0"
 fi
